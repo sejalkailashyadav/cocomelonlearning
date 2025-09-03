@@ -97,6 +97,7 @@
 <div class="login-container">
   <!-- Left: Login Form -->
   <div class="login-left">
+    <h2 class="mb-4 text-center">dev : Login to Cocomelon magenta</h2>
     <h2 class="mb-4 text-center">Main  : Login to Cocomelon magenta</h2>
     <form method="POST" action="{{ route('doLogin') }}">
       @csrf
