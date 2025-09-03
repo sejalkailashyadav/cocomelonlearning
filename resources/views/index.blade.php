@@ -4,6 +4,7 @@
 @endsection
 
 @section('content')
+
 <!-- PAGE-HEADER -->
 <div class="page-header">
     <h1 class="page-title">Cocomelonlearning Magenta Dashboard</h1>
