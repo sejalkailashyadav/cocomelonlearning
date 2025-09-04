@@ -8,7 +8,13 @@
         <div class="page-header">
             <h1 class="page-title">Children Class: {{ $class->class_name }}</h1>
         </div>
-<a href="https://erp.cocomelonlearning.com/class-masters" class="btn btn-secondary mb-3" style="margin-left: 88%;margin-right: -77px;">← Back to Class</a>
+<!-- <a href="https://erp.cocomelonlearning.com/class-masters" class="btn btn-secondary mb-3" 
+style="margin-left: 88%;margin-right: -77px;">← Back to Class</a> -->
+<a href="{{ url('class-masters') }}"  class="btn btn-secondary mb-3" 
+style="margin-left: 88%;margin-right: -77px;">← Back to Class</a>
+
+
+
 <br>
     @if($class->children->isEmpty())
         <p>No children enrolled in this class.</p>

@@ -9,9 +9,13 @@
         <h1 class="h3 text-black fw-bold mb-0">
              Children Class: {{ $class->class_name }}
         </h1>
-        <a href="https://erp.cocomelonlearning.com/class-masters" class="btn btn-secondary">
+        <!-- <a href="https://erp.cocomelonlearning.com/class-masters" class="btn btn-secondary">
+            <i class="fa fa-arrow-left me-1"></i> Back to Class
+        </a> -->
+  <a href="{{ url('class-masters') }}"  class="btn btn-secondary">
             <i class="fa fa-arrow-left me-1"></i> Back to Class
         </a>
+        
     </div>
 
     <!-- CHILDREN LIST -->

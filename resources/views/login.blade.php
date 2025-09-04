@@ -97,8 +97,7 @@
 <div class="login-container">
   <!-- Left: Login Form -->
   <div class="login-left">
-
-    <h2 class="mb-4 text-center"> Cocomelon</h2>
+    <h2 class="mb-4 text-center">Login </h2>
     <form method="POST" action="{{ route('doLogin') }}">
       @csrf
       <div class="mb-3">
@@ -123,7 +122,9 @@
 
   <!-- Right: Image/Vector -->
   <div class="login-right">
-    <img src="https://erp.cocomelonlearning.com/public/login-bg.png" alt="Login Vector">
+    <!-- <img src="https://erp.cocomelonlearning.com/public/login-bg.png" alt="Login Vector"> -->
+     <img src="{{ asset('login-bg.png') }}" alt="Login Vector">
+     
   </div>
 </div>
 
