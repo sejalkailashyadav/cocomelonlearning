@@ -42,14 +42,18 @@
                         <label class="form-label">Resume</label>
                         <input type="file" name="resume" class="form-control">
                         @if($employee->resume)
-                            <a href="{{ asset('https://erp.cocomelonlearning.com/' . $employee->resume) }}" target="_blank">View Current</a>
+                            <!-- <a href="{{ asset('https://erp.cocomelonlearning.com/' . $employee->resume) }}" target="_blank">
+                                View Current</a> -->
+
+                                <a href="{{ asset($employee->resume) }}" target="_blank">View Current</a>
                         @endif
                     </div>
                     <div class="col-md-4" id="ece_license">
                         <label class="form-label">Upload ECE License (PDF)</label>
                         <input type="file" name="ece_license" accept="application/pdf" class="form-control">
                         @if($employee->ece_license)
-                            <a href="{{ asset('https://erp.cocomelonlearning.com/' . $employee->ece_license) }}" target="_blank">View Current</a>
+                            <!-- <a href="{{ asset('https://erp.cocomelonlearning.com/' . $employee->ece_license) }}" target="_blank">View Current</a> -->
+                            <a href="{{ asset($employee->ece_license) }}" target="_blank">View Current</a>
                         @endif
                     </div>
 
@@ -102,8 +106,9 @@
                             <label class="form-label">Upload {{ $label }} (PDF)</label>
                             <input type="file" name="{{ $field }}" accept="application/pdf" class="form-control">
                             @if($employee->$field)
-                                <a href="{{ asset('https://erp.cocomelonlearning.com/' . $employee->$field) }}" target="_blank">View Current</a>
-                            @endif
+                                <!-- <a href="{{ asset('https://erp.cocomelonlearning.com/' . $employee->$field) }}" target="_blank">View Current</a> -->
+                                  <a href="{{ asset($employee->$field) }}" target="_blank">View Current</a>
+                                @endif
                         </div>
                     @endforeach
 
